@@ -4,6 +4,7 @@ import requests
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog as fd
+from PIL import Image, ImageTk
 
 headers = {
     "accept": "application/json",
@@ -48,6 +49,11 @@ def convertHash(filepath):
 app = tk.Tk()
 app.title("Hash Converter")
 app.geometry("300x150")
+app.resizable(False, False)
+
+p = Image.open("HashConverter.png")
+render = ImageTk.PhotoImage(p)
+app.iconphoto(False, render)
 
 l = tk.Label(app, font=("Calibri", 12), text="Select a file and hash type", height=10)
 l.place(relx=0.50, rely=0.15, anchor="center")

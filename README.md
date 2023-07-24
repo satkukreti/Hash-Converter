@@ -1,15 +1,18 @@
 # Hash Converter 
 
-A simple application that takes any identifiable information of a malicious file, ideally its SHA1 hash, and uses VirusTotal's API to scrape and collect either the SHA256 or MD5 alternative.
+A simple application that takes any identifiable information of a malicious file, ideally its SHA1 hash, and uses VirusTotal's API to scrape and collect either the SHA256 or MD5 alternative. The goal of this project was to:
 
-![Pls load](HashConverterSmall.png) 
+- Create a folder selecting tool using a GUI
+- Implement VirusTotal's API to scrape and collect information
 
 ## How To
 
 I made Hash Converter because many cybersecurity tools that manage firewalls and proxys (CheckPoint, NetSkope, etc.) can only filter hashes that are SHA256 or MD5. Often, however, SOC Threat Landscape Updates report only SHA1 hashes in their list of IOCs. It can take cyber teams hours to manually search for other hash equivalents, copy, paste, delete - rinse and repeat - to properly patch their network. Instead, Hash Converter can speed up this process to take only a few seconds.
 
-Before running the code, make an account in VirusTotal and obtain your API key. Copy past that into the double quotes next to the appropriate comment in convertHashes.py.
+***Before running the code***, make an account in VirusTotal and obtain your API key. Copy past that into the double quotes next to the appropriate comment in convertHashes.py.
 
-To use Hash Converter, get a list of SHA1 hashes and paste them into a text file. Select whether you want a SHA256 or MD5 conversion, and then choose the file via a GUI. Wait until the text box says that it is finished, and then search for an outputed text file called "hashconversion.txt". This file contains the newly converted hashes, and will let you know whether the hashes were found by indicating "Not Found" is an equivalent was not found.
+To use Hash Converter, get a list of SHA1 hashes and paste them into a text file. Select whether you want a SHA256 or MD5 conversion, and then choose the file via a GUI. Wait until the text box says that it is finished, and then search for an outputed text file called `hashconversion.txt`. This file contains the newly converted hashes, and will let you know whether the hashes were found by indicating "Not Found" is an equivalent was not found.
 
 I hope this tool is useful to you, please let other teams know about Hash Converter if you agree!
+
+## Runtime Example

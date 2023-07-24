@@ -1,7 +1,10 @@
-![Pls load](HashConverterSmall.png) 
 # Hash Converter 
 
 A simple application that takes any identifiable information of a malicious file, ideally its SHA1 hash, and uses VirusTotal's API to scrape and collect either the SHA256 or MD5 alternative.
+
+![Pls load](HashConverterSmall.png) 
+
+## How To
 
 I made Hash Converter because many cybersecurity tools that manage firewalls and proxys (CheckPoint, NetSkope, etc.) can only filter hashes that are SHA256 or MD5. Often, however, SOC Threat Landscape Updates report only SHA1 hashes in their list of IOCs. It can take cyber teams hours to manually search for other hash equivalents, copy, paste, delete - rinse and repeat - to properly patch their network. Instead, Hash Converter can speed up this process to take only a few seconds.
 

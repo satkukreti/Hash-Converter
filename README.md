@@ -1,6 +1,6 @@
 # Hash Converter 
 
-A simple application that takes any identifiable information of a malicious file, ideally its SHA1 hash, and uses VirusTotal's API to scrape and collect either the SHA256 or MD5 alternative. The goal of this project was to:
+A GUI application that takes any identifiable information of a malicious file, ideally its SHA1 hash, and uses VirusTotal's API to scrape and collect either the SHA256 or MD5 alternative. The goal of this project was to:
 
 - Create a folder selecting tool using a GUI
 - Implement VirusTotal's API to scrape and collect information
